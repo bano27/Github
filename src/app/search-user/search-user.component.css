@@ -1,0 +1,21 @@
+table{
+  width: auto;
+  border-collapse: collapse;
+  border-color: #D3D3D3;
+}
+tr, th, td{
+  padding: 30px;
+  margin: 30px;
+  border-color: #D3D3D3;
+  border: solid;
+  text-align: center;
+}
+.footer{
+  text-align: center;
+}
+tr:nth-child(odd){
+  background-color: #D3D3D3;
+}
+#Userform{
+  text-align: center;
+}

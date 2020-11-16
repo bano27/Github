@@ -1,1 +1,9 @@
-<p>search-form works!</p>
+<div class="container-fluid">
+  <form #searchForm='ngForm' (ngSubmit)='userGit()'>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="searchUser.name" name="name" #name='ngModel' placeholder="Enter Github Username" required>
+      Display {{searchUser.name}}
+      <button type="submit" name="button">SEARCH</button>
+    </div>
+  </form>
+</div>

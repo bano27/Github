@@ -2,38 +2,39 @@
   <div class="row" id="Userform">
     <div class="col-md-12">
       <h2>Search Github User</h2>
-      <app-search-form></app-search-form>
+      <app-search-form (getUser)="newUser($event)"></app-search-form>
     </div>
   </div>
+  <br>
   <div class="row">
     <div class="col-md-7">
       <table class="table table-striped">
         <tbody>
           <tr>
             <th>Github Username</th>
-            <td></td>
+            <td><a href="{{userDetails.html_url}}">{{userDetails.login}}</a></td>
           </tr>
           <tr>
             <th>Github Created On</th>
-            <td></td>
+            <td>{{userDetails.created_at}}</td>
           </tr>
           <tr>
             <th>Number of Repositories Done</th>
-            <td></td>
+            <td>{{userDetails.public_repos}}</td>
           </tr>
           <tr>
             <th>Number Of Followers</th>
-            <td></td>
+            <td>{{userDetails.followers}}</td>
           </tr>
           <tr>
             <th>Number of Following</th>
-            <td></td>
+            <td>{{userDetails.following}}</td>
           </tr>
         </tbody>
       </table>
     </div>
     <div class="col-md-5">
-      <img src="" alt="">
+      <img src="{{userDetails.avatar_url}}" alt="">
     </div>
   </div>
   <br>

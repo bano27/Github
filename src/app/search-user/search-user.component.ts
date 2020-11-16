@@ -4,7 +4,6 @@ import { GithubUser } from "../github-user";
 import { Search } from "../search";
 import { HttpClient } from "@angular/common/http";
 
-
 @Component({
   selector: 'app-search-user',
   templateUrl: './search-user.component.html',
